@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: df fd, fd, LIC=X96Z9-49RPN-XUU41-CM4TR-NY0SN-U0VAK
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      CMSIS_AGDI.dll V1.27.5.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+D:\xushuye\xsy_2022\LQB_14\9shen_yu\HAL_06_LCD\MDK-ARM\HAL_06_LCD.uvprojx
+Project File Date:  03/24/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'HAL_06_LCD'
+compiling main.c...
+../Src/main.c(192): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(pucDisp,"     No.%d",ucID+1);
+../Src/main.c(197): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  			sprintf(pucDisp,"     %02d:%02d:%02d",ucDispH,ucDispM,ucDispS);
+../Src/main.c(244): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  				strcpy(pucDisp,"     Standby");
+../Src/main.c(250): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  				strcpy(pucDisp,"     Setting");
+../Src/main.c(253): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  				strcpy(pucDisp,"     Running");
+../Src/main.c(256): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  				strcpy(pucDisp,"     Pause  ");
+../Src/main.c(263): warning:  #177-D: variable "i"  was declared but never referenced
+  	u8 i=0;
+../Src/main.c(289): warning:  #550-D: variable "ucOnce"  was set but never used
+  	static u8 ucOnce=0;
+../Src/main.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=10232 RO-data=5080 RW-data=56 ZI-data=1120  
+FromELF: creating hex file...
+"HAL_06_LCD\HAL_06_LCD.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM::CMSIS:CORE:5.5.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_HAL_06_LCD
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.1.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: bkrc mycomputer, mycomputer, LIC=76F5U-SI3Q1-SBAEJ-UBZGM-TQ56B-XR0EP
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.31.18.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+F:\11shen_2_test_OK1\11shen_2_test_ok\HAL_06_LCD\MDK-ARM\HAL_06_LCD.uvprojx
+Project File Date:  03/25/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'HAL_06_LCD'
+compiling main.c...
+../Inc/adc.h(43): warning:  #1295-D: Deprecated declaration ADC2_Read - give arg types
+  u16 ADC2_Read();
+../Src/main.c(139): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  	sprintf(pucOut,"%s","hello");
+../Src/main.c(142): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  	strcpy(pucOut,"hello");
+../Src/main.c(233): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(pucDisp,"  V:%4.2fV",usR37*3.3/4095);
+../Src/main.c(237): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(pucDisp,"  Mode:%s",ppucMode[ucMode] );
+../Src/main.c(245): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(pucDisp,"  PA6:%d%%     ",pucDuty_Manu[0]);
+../Src/main.c(247): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(pucDisp,"  PA7:%d%%     ",pucDuty_Manu[1]);
+../Src/main.c(252): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(pucDisp,"  Freq:%4.1fHZ      ",1000000.0/Capture);
+../Src/main.c(254): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(pucDisp,"  Duty:%4.1f%%      ",100.0*Duty/Capture);
+../Src/main.c(259): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(pucDisp,"  Freq:%4.1fHZ      ",0);
+../Src/main.c(259): warning:  #181-D: argument is incompatible with corresponding format string conversion
+  		sprintf(pucDisp,"  Freq:%4.1fHZ      ",0);
+../Src/main.c(261): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(pucDisp,"  Duty:%4.1f%%      ",0);
+../Src/main.c(261): warning:  #181-D: argument is incompatible with corresponding format string conversion
+  		sprintf(pucDisp,"  Duty:%4.1f%%      ",0);
+../Src/main.c(264): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  	sprintf(pucDisp,"  Capt1:%d      ",Capture);
+../Src/main.c(266): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  	sprintf(pucDisp,"  Duty1:%d      ",Duty);
+../Src/main.c(364): warning:  #177-D: variable "uwTim3Pulse"  was declared but never referenced
+  	uint32_t uwTim3Pulse,uwTim1Pulse;
+../Src/main.c(364): warning:  #177-D: variable "uwTim1Pulse"  was declared but never referenced
+  	uint32_t uwTim3Pulse,uwTim1Pulse;
+../Src/main.c(393): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+  		rst=sscanf(pucIn,"%4s:%d,%d",pucTemp,&ucPA6,&ucPA7);
+../Src/main.c(393): warning:  #181-D: argument is incompatible with corresponding format string conversion
+  		rst=sscanf(pucIn,"%4s:%d,%d",pucTemp,&ucPA6,&ucPA7);
+../Src/main.c(393): warning:  #181-D: argument is incompatible with corresponding format string conversion
+  		rst=sscanf(pucIn,"%4s:%d,%d",pucTemp,&ucPA6,&ucPA7);
+../Src/main.c(396): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  			if(!strcmp(pucTemp,"AUTO") || !strcmp(pucTemp,"MANU"))
+../Src/main.c(396): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  			if(!strcmp(pucTemp,"AUTO") || !strcmp(pucTemp,"MANU"))
+../Src/main.c(398): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  				if(!strcmp(pucTemp,"AUTO"))
+../Src/main.c(401): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  					strcpy(pucReply ,"OK1");
+../Src/main.c(421): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  						strcpy(pucOut ,"Er3");
+../Src/main.c(430): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  				strcpy(pucOut ,"Er2");
+../Src/main.c(436): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  			strcpy(pucOut ,"Er1");
+../Src/main.c(445): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		strcpy(pucOut ,"Er0");
+../Src/main.c: 28 warnings, 0 errors
+linking...
+Program Size: Code=26164 RO-data=5216 RW-data=56 ZI-data=1536  
+FromELF: creating hex file...
+"HAL_06_LCD\HAL_06_LCD.axf" - 0 Error(s), 28 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G4xx_DFP.1.1.1.pack
+                Keil.STM32G4xx_DFP.1.1.1
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_HAL_06_LCD
+  D:\Robot Master\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  D:\Robot Master\Keil\STM32G4xx_DFP\1.1.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

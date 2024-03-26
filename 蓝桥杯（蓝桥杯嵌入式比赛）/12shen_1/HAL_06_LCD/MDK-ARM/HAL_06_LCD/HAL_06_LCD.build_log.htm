@@ -1,0 +1,125 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: bkrc mycomputer, mycomputer, LIC=76F5U-SI3Q1-SBAEJ-UBZGM-TQ56B-XR0EP
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.31.18.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+F:\12shen_1-\12shen_1\HAL_06_LCD\MDK-ARM\HAL_06_LCD.uvprojx
+Project File Date:  04/03/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'HAL_06_LCD'
+assembling startup_stm32g431xx.s...
+compiling stm32g4xx_ll_pwr.c...
+compiling stm32g4xx_hal_flash_ramfunc.c...
+compiling stm32g4xx_hal_rcc.c...
+compiling gpio.c...
+compiling stm32g4xx_hal_gpio.c...
+compiling main.c...
+../Src/main.c(85): warning:  #1295-D: Deprecated declaration CKStatus_Proc - give arg types
+  void CKStatus_Proc();
+../Src/main.c(210): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(pucDisp,"  CNBR:%d",ucCNBR);
+../Src/main.c(225): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(pucDisp,"  CNBR:%-3.2f",MyRate[0]);
+../Src/main.c(273): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  					MyRate[0] +=0.5;
+../Src/main.c(274): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  					MyRate[1] +=0.5;
+../Src/main.c(280): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  					MyRate[0] -=0.5;
+../Src/main.c(283): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  					MyRate[1] -=0.5;
+../Src/main.c(371): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  		if(CarKu[i].ucCarType>0 &&!strcmp(pucCarNo_L,CarKu[i].pucCarNo))
+../Src/main.c(371): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  		if(CarKu[i].ucCarType>0 &&!strcmp(pucCarNo_L,CarKu[i].pucCarNo))
+../Src/main.c(377): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  			strcpy(CarKu[i].pucCarNo,"");
+../Src/main.c(385): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		strcpy(CarKu[idleI].pucCarNo,pucCarNo_L); 
+../Src/main.c(385): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+  		strcpy(CarKu[idleI].pucCarNo,pucCarNo_L); 
+../Src/main.c(360): warning:  #177-D: variable "ucFlag"  was declared but never referenced
+  	u8 i,ucFlag,idleI,idleFlag;	
+../Src/main.c(428): warning:  #223-D: function "sscanf" declared implicitly
+  			result=sscanf(pucCmd,"%4s:%4s:%2d%2d%2d%2d%2d%2d",pucType,pucCar,&year,&month,&day,&hour,&min,&sec);
+../Src/main.c(432): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  				if((!strcmp(pucType,"CNBR") || !strcmp(pucType,"VNBR")) && TimeOK(year,month,day ,hour,min,sec)==1)
+../Src/main.c(432): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  				if((!strcmp(pucType,"CNBR") || !strcmp(pucType,"VNBR")) && TimeOK(year,month,day ,hour,min,sec)==1)
+../Src/main.c(434): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  					if (!strcmp(pucType,"CNBR"))
+../Src/main.c(449): warning:  #223-D: function "sprintf" declared implicitly
+  						sprintf(pucRpy,"%s:%s:%d:%-4.2f",pucType,pucCar,siStopHours,fMoney);
+../Src/main.c(450): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  						HAL_UART_Transmit_IT(&huart1,pucRpy,strlen(pucRpy));
+../Src/main.c: 19 warnings, 0 errors
+compiling stm32g4xx_hal.c...
+compiling stm32g4xx_hal_flash_ex.c...
+compiling usart.c...
+compiling stm32g4xx_hal_rcc_ex.c...
+compiling stm32g4xx_it.c...
+compiling stm32g4xx_hal_msp.c...
+compiling stm32g4xx_hal_flash.c...
+compiling stm32g4xx_hal_tim_ex.c...
+compiling tim.c...
+compiling lcd.c...
+compiling stm32g4xx_hal_tim.c...
+compiling stm32g4xx_hal_dma.c...
+compiling system_stm32g4xx.c...
+compiling stm32g4xx_hal_cortex.c...
+compiling stm32g4xx_hal_exti.c...
+compiling stm32g4xx_hal_dma_ex.c...
+compiling stm32g4xx_hal_pwr.c...
+compiling stm32g4xx_hal_uart_ex.c...
+compiling stm32g4xx_hal_pwr_ex.c...
+compiling stm32g4xx_hal_uart.c...
+linking...
+Program Size: Code=20052 RO-data=5176 RW-data=48 ZI-data=1704  
+FromELF: creating hex file...
+"HAL_06_LCD\HAL_06_LCD.axf" - 0 Error(s), 19 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G4xx_DFP.1.1.1.pack
+                Keil.STM32G4xx_DFP.1.1.1
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_HAL_06_LCD
+  D:\Robot Master\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  D:\Robot Master\Keil\STM32G4xx_DFP\1.1.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>
